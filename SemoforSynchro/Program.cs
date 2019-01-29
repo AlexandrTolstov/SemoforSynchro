@@ -50,7 +50,6 @@ namespace SemoforSynchro
                 {
                     Count.Num--;
                     Console.WriteLine("{0} покидает библиотеку; В библиотеке: {1}", Thread.CurrentThread.Name, Count.Num);
-                    Console.WriteLine("--------------------------------------");
                 }
                 sem.Release();
                 Thread.Sleep(1000);
